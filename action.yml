@@ -1,0 +1,13 @@
+name: 'GAE environment variable compiler (path configurable)'
+description: 'Compiles and swaps environment variables in app.yaml with the minimal effort'
+branding:
+  icon: 'cloud'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  appyamlpath:
+    description: 'The path of the app.yaml file'
+    required: false
+    default: 'app.yaml'
